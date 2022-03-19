@@ -1,0 +1,65 @@
+:root{
+    --font-color:rgb(48, 46, 42);
+    --dark: rgb(0, 80, 18);
+    --medium: blue;
+    --light: rgb(101, 218, 116);
+
+}
+
+*   {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    background-color: white;
+}
+
+h1 {
+    position: absolute;
+    margin-right: auto;
+    font-family: sans-serif;
+    font-weight: 200;
+    font-size: 50px;
+    text-decoration: none;
+    padding: 25px 200px 25px 100px;
+    color: aquamarine;
+    background-color: blue;
+
+}
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 5px;
+    
+}
+
+li, a {
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    color: aqua;
+    background-color: blueviolet;
+    text-decoration: none;
+}
+
+.navlinks{
+    list-style: none;
+}
+
+.navlinks li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.navlinks li a:hover {
+    color: blue;
+
+}
+
+body {
+    background-color: blanchedalmond;
+
+}
+.container {
+    display: flex;
+}
