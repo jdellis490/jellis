@@ -16,18 +16,19 @@
 h1 {
     position: relative;
     margin-right: auto;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: 200;
     font-size: 50px;
     text-decoration: none;
     padding: 25px 200px 25px 100px;
-    color: var(--light);
+    color: var(--dark);
     background-color: var(--medium);
 
 }
 nav .navlinks {
     display: flex;
-    justify-content: flex-end;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     padding: 30px 5px;
     position: relative;
@@ -38,8 +39,8 @@ li, a {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 500;
     font-size: 25px;
-    color: var(--light);
-    background-color: var(--medium);
+    color: var(--dark);
+    background-color: var(--light);
     text-decoration: none;
 }
 
@@ -70,10 +71,10 @@ body {
 
 h2 {
     font-size: 40px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: 300;
     text-align: center;
-    color: var(--light);
+    color: var(--bright);
     background-color: var(--medium);
     text-decoration: underline;
 
@@ -90,7 +91,9 @@ p{
     font-size: 20px;
     font-family: sans-serif;
     font-weight: 100;
-    text-align: center;
+    text-align: justify center;
+    color: var(--dark);
+    background-color: var(--medium);
     border: 2px solid var(--bright);
     border-radius: 10px;
     padding: 25px;
@@ -121,7 +124,7 @@ img {
     
 }
 
-#avatarpic {
+#avatarpic img {
     display: flex;
     border-width: 0px;
     margin-left: auto;
@@ -173,32 +176,41 @@ img {
       box-shadow:0 8px 16px 0 #D8E9A8;
   }
   
-  /* Responsive columns - one column layout (vertical) on small screens */
-  @media screen and (max-width: 600px) {
-    .column {
-      width: 100%;
-      display: block;
-      margin-bottom: 20px;
-    }
-  }
-
-#contactlinks {
+  #contactlinks {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     padding: 30px 5px;
     position: relative;
 
 }
+  /* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 800px) {
+    .column {
+      width: 50%;
+      display: block;
+      margin-bottom: 20px;
+    }
+    #avatarpic img {
+        width: 100%
+    }
+  }
+  /* Media queries */
+
+@media screen and (max-width: 400px) {
+    .column {
+        width: 90%;
+        display: block;
+      }
+    
+}
 
   /* PHOTO CREDS*
   Avatar Photo by Iheb AB on Unsplash
+  Code Photo by Roozbeh Eslami on Unsplash
+  
   
 
-/* Media queries */
 
-@media screen and (max-width: 700px) {
-
-    
-}
 
