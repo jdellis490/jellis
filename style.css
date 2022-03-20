@@ -1,8 +1,8 @@
 :root{
-    --font-color:rgb(48, 46, 42);
-    --dark: rgb(0, 80, 18);
-    --medium: blue;
-    --light: rgb(101, 218, 116);
+    --bright: #D8E9A8;
+    --light: #4E9F3D;
+    --medium: #1E5128;
+    --dark: #191A19;
 
 }
 
@@ -10,35 +10,36 @@
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
-    background-color: white;
+    background-color: var();
 }
 
 h1 {
-    position: absolute;
+    position: relative;
     margin-right: auto;
-    font-family: sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: 200;
     font-size: 50px;
     text-decoration: none;
     padding: 25px 200px 25px 100px;
-    color: aquamarine;
-    background-color: blue;
+    color: var(--light);
+    background-color: var(--medium);
 
 }
-nav {
+nav .navlinks {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     padding: 30px 5px;
+    position: relative;
     
 }
 
 li, a {
-    font-family: sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: 500;
     font-size: 25px;
-    color: aqua;
-    background-color: blueviolet;
+    color: var(--light);
+    background-color: var(--medium);
     text-decoration: none;
 }
 
@@ -52,66 +53,140 @@ li, a {
 }
 
 .navlinks li a:hover {
-    color: blue;
+    color: var(--bright);
 
 }
 
 body {
-    background-color: blanchedalmond;
-
-}
- p {
-     display: block;
-     margin-block-start: 1em;
-     margin-block-end: 1em;
-     margin-inline-start: 0px;
-     margin-inline-end: 0px;
-     
- }
-section {
-    display: block;
-}
-.project-column {
-    flex: 1 0 100%;
-    padding: 1.5rem;
-    transition: flex-basis 500ms linear;
-    margin-bottom: 1.5rem;
+    background-color: var(--dark)
 
 }
 
-.project-header {
-    position: relative;
-    margin: -4rem 0, 1.5rem 0;
-    padding: .5rem 1rem;
-    background-color: red;
-    color: blue;
-    border: 2px solid color orange;
-    border-radius: 8px;
-    transition: all 0.5s ease-in-out;
-}
-
-.project-box {
+.row{
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    min-height: 100%;
-    padding: 2rem;
-    color: yellow;
-    outline: 2px solid gray;
-    outline-offset: -2px;
-    transition: all 0.5s ease-in-out;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+h2 {
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    text-align: center;
+    color: var(--light);
+    text-decoration: underline;
+
+}
+h3 {
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    text-align: center;
+    color: var(--light);
+}
+
+p{
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 100;
+    text-align: center;
+    border: 2px solid var(--bright);
+    border-radius: 10px;
+    padding: 25px;
+}
+div {
+    display: block;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+section {
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
 
 }
 
-.project-image {
-    display:flex;
-    align-items: center;
-    white-space: pre-wrap;
-    overflow: auto;
-    tab-size: 4;
-    padding: 1.2rem 1rem;
-    color: gold;
-    border-radius: 8px;
-    background-image: none;
+img {
+    display: flex;
+    border-width: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 100%;
     
 }
+
+#avatarpic {
+    display: block;
+    border-width: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 50%;
+    
+}
+
+/* CARDS FOR PROJECTS*/
+.column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Style the counter cards */
+
+  .maincard{
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        padding: 16px;
+        text-align: center;
+        background-color: var(--medium);
+
+      }
+      
+.container {
+        padding: 2px 16px;
+      }
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+    padding: 16px;
+    text-align: center;
+    background-color: var(--medium);
+
+  }
+  .maincard:hover,.card:hover{
+      box-shadow:0 8px 16px 0 #D8E9A8;
+  }
+  
+  /* Responsive columns - one column layout (vertical) on small screens */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+
+
+  /* PHOTO CREDS*
+  Avatar Photo by Iheb AB on Unsplash
+  
+
+/* Media queries */
+
+@media screen and (max-width: 700px) {
+
+    
+}
+
