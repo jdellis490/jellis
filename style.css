@@ -43,16 +43,16 @@ li, a {
     text-decoration: none;
 }
 
-.navlinks{
+.navlinks, #contactlinks{
     list-style: none;
 }
 
-.navlinks li {
+.navlinks li, #contactlinks li {
     display: inline-block;
     padding: 0px 20px;
 }
 
-.navlinks li a:hover {
+.navlinks li a:hover, #contactlinks li a:hover {
     color: var(--bright);
 
 }
@@ -74,6 +74,7 @@ h2 {
     font-weight: 300;
     text-align: center;
     color: var(--light);
+    background-color: var(--medium);
     text-decoration: underline;
 
 }
@@ -103,10 +104,10 @@ div {
 }
 
 section {
-    margin-top: 100px;
+    margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 
 }
 
@@ -121,12 +122,13 @@ img {
 }
 
 #avatarpic {
-    display: block;
+    display: flex;
     border-width: 0px;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
     height: 50%;
+    padding: 50px;
     
 }
 
@@ -140,22 +142,24 @@ img {
   /* Clear floats after the columns */
   .row:after {
     content: "";
-    display: table;
+    display: flex;
+    justify-content: space-between;
     clear: both;
   }
   
   /* Style the counter cards */
 
   .maincard{
+        display: block;
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-        padding: 16px;
+        padding: 25px;
         text-align: center;
         background-color: var(--medium);
 
       }
       
 .container {
-        padding: 2px 16px;
+        padding: 2px 1px;
       }
 
   .card {
@@ -178,6 +182,14 @@ img {
     }
   }
 
+#contactlinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 5px;
+    position: relative;
+
+}
 
   /* PHOTO CREDS*
   Avatar Photo by Iheb AB on Unsplash
