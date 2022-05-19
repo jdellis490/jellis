@@ -6,7 +6,7 @@ The motivation behind this project was to create something on my own using the s
 
 ## Usage
 
-To use my project one must simply view this https://github.com/jdellis490/HW2-ProPortfolio.git
+To use my project one must simply view this: [Website for Portfolio](https://jdellis490.github.io/HW2-ProPortfolio/)
 
 Here is what it looks like:
 <img width="1714" alt="PortfolioScreenshot" src="https://user-images.githubusercontent.com/81279037/169199238-9e08e4ea-6749-44f4-9123-e890e730fee8.png">
